@@ -1,11 +1,12 @@
 import CoinClass as c
-
+#referring to naming CoinClass as c, and essentially copying & pasting from CoinClass.py
 
 # The main function.
 def main():
        # Create an object from the Coin class.
        my_coin = c.Coin()   # this creates an instance called 'my_coin' of the class 'Coin()'
-
+#creating the house from the blueprint
+       
        # Display the side of the coin that is facing up.
        print('This side is up:', my_coin.get_sideup())    # notice you do not have to supply the argument/parameter
 
