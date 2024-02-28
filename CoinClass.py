@@ -25,4 +25,4 @@ class Coin:
     # referenced by sideup.
 
     def get_sideup(self):
-            return self.__sideup
+            return self.sideup

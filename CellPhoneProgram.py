@@ -1,15 +1,30 @@
 import CellPhoneClass as c
 
-cell = c.Cell()
+phone = c.Cell('Apple', 'Iphone 15', 1099)
 
-man = input('Who is the Manufacturer? ')
-cell.set_manufact(man)
+affirm = input(f"The Manufacturer is currently {phone.get_manufact()}. Do you want to change it? Enter 'yes' or 'no'.\n")
+if affirm == 'yes':
+    ma = input('Who is the Manufacturer? ') 
+    phone.set_manufact(ma)
+elif affirm == 'no':
+    ma = phone._manufact
+    phone.set_manufact(ma)
 
-model = input('What is the model? ')
-cell.set_model(model)
+affirm = input(f"The Model is currently {phone.get_model()}. Do you want to change it? Enter 'yes' or 'no'.\n")
+if affirm == 'yes':
+    mo = input('What is the Model? ') 
+    phone.set_model(mo)
+elif affirm == 'no':
+    mo = phone._model
+    phone.set_model(mo)
 
-retail = input('What is the retail price? ')
-cell.set_retail_price(retail)
+affirm = input(f"The price is currently ${phone.get_retail_price()}. Do you want to change it? Enter 'yes' or 'no'.\n")
+if affirm == 'yes':
+    re = input('What is the price? ') 
+    phone.set_retail_price(re)
+elif affirm == 'no':
+    re = phone._retail_price
+    phone.set_retail_price(re)
 
-print(f"{cell.get_manufact()} manufactured the {cell.get_model()} for a retail price of ${cell.get_retail_price()}")
+print(f"{phone.get_manufact()} manufactured the {phone.get_model()} for a retail price of ${phone.get_retail_price()}.")
     

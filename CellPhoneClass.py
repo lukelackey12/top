@@ -1,6 +1,6 @@
 class Cell:
 
-    def _init_(self, ma, mo, re):
+    def __init__(self, ma, mo, re):
         self._manufact = ma
         self._model = mo
         self._retail_price = re
