@@ -1,13 +1,12 @@
-import InsectClass as c
+import InsectClass as i
 
-
-mosquito = c.Insect()
-housefly = c.Insect()
+mosquito = i.Insect(2,4,'Mosquito')
+housefly = i.Insect(2,4,'Housefly')
 
 mosquito.length()
 housefly.length()
 
-
-print(f"The mosquito can fly up to {mosquito.get_length()} miles")
-print(f"The housefly can fly up to {housefly.get_length()} miles")
+#get/accessor method
+print(f"The {mosquito.get_name()} can fly up to {mosquito.get_length()} miles")
+print(f"The {housefly.get_name()} can fly up to {housefly.get_length()} miles")
             
