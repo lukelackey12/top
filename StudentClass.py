@@ -1,20 +1,4 @@
-"""
-Create a student class (name the file StudentClass.py). The class
-should have 4 attributes. StudentID, Name, DOB and classification
-(F,S,Jr,Sr).
-• Create a method that will calculate the student’s current age
-• Create a method that will determine when the student can
-register –
-• Seniors – 4/1 thru 4/3
-• Juniors – 4/4 thru 4/6
-• Sophomores – 4/7 thru 4/9
-• Freshmen – 4/10 thru 4/12
-• Create a method to return the age and another method to return
-the registration dates.
-Create a program file (name the file StudentProgram.py) that will
-create an instance of the student class and display the age of the
-student and when they can register.
-"""
+
 from datetime import datetime, timedelta
 
 
